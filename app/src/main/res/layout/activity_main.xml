@@ -19,7 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:text="Asia" />
+            android:paddingBottom="10dp"
+            android:text="Asia"
+            android:textStyle="bold" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler"
@@ -31,7 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:gravity="center_vertical"
-            android:text="Europe" />
+            android:paddingBottom="10dp"
+            android:text="Europe"
+            android:textStyle="bold" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_1"

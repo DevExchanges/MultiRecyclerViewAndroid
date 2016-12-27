@@ -21,9 +21,18 @@ public class MainActivity extends AppCompatActivity {
         firstRecyclerView = (RecyclerView)findViewById(R.id.recycler);
         secondRecyclerView = (RecyclerView)findViewById(R.id.recycler_1);
 
+        //create and set layout manager for each RecyclerView
         RecyclerView.LayoutManager firstLayoutManager = new LinearLayoutManager(this);
         RecyclerView.LayoutManager secondLayoutManager = new LinearLayoutManager(this);
+
         firstRecyclerView.setLayoutManager(firstLayoutManager);
         secondRecyclerView.setLayoutManager(secondLayoutManager);
+
+        //Initializing and set adapter for each RecyclerView
+        RecyclerViewAdapter firstAdapter = new RecyclerViewAdapter(this, asiaCountries);
+        RecyclerViewAdapter secondAdapter = new RecyclerViewAdapter(this, europeCountries);
+
+        firstRecyclerView.setAdapter(firstAdapter);
+        secondRecyclerView.setAdapter(secondAdapter);
     }
 }
